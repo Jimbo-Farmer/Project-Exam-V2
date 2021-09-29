@@ -1,0 +1,86 @@
+body {
+    background-color: #027CC1;
+}
+
+.form-container {
+    margin: 48px auto;
+    width: 50%;
+    min-width: 300px;  
+    max-width: 600px;  
+    background-color: #303030;
+    padding: 36px;
+}
+
+input, textarea{
+    width: 100%;
+    display: block;
+    padding: 4px;
+}
+
+#search-go {
+    width: unset;
+    min-width: unset;
+}
+#search-field {
+    min-width: unset;
+}
+
+.form-error {
+    margin-bottom: 24px;
+    color: #FCC;
+    visibility: hidden;
+    margin: 4px auto 16px auto;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+#success {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 550;
+    animation: expand 0.5s;   
+    animation-timing-function: ease-out; 
+}
+
+@keyframes expand {
+    0% {transform: scale(0);} 
+    100% {transform: scale(1);}
+}
+
+#success .message-details {
+    position: sticky;
+    top: 20%;
+    border: 1px solid  #FACE3C;
+    width: 60%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #303030;
+    padding: 30px;
+    
+}
+
+#success a {
+    display: block;
+    padding: 6px 12px;
+    margin: 20px auto;
+    max-width: 300px;
+    background-color: #FACE3C;
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+#success a:hover {
+    background-color: #027CC1;
+    color: white;
+}
+
+#success:target {
+    display: unset;
+}

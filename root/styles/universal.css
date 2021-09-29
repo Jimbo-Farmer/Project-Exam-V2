@@ -1,0 +1,256 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    max-width: 2000px;
+}
+
+header {
+    padding: 6px 5% 12px 5%;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    background-color: #303030;
+    position: sticky;
+    top: 0;
+    z-index: 300; 
+}
+
+#title {
+    max-width: 250px;
+}
+
+#title p {
+    line-height: 1em;
+}
+
+.navbar{
+    padding-top: 6px;
+}
+
+.main-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.75rem; 
+    margin: 0;
+}
+
+.main-title span {
+    font-weight: bold;
+    color: #FACE3C;
+}
+
+.tagline {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 4px 0;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+#hamburger {
+    position: absolute;
+    right: 5%;
+    top: 8px;
+    width: 70px;
+    height: 60px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    z-index: 250;
+}
+
+#burger-top, .burger-middle, #burger-bottom{
+    width: 45px;
+    height: 7px;
+    background-color: #FACE3C;
+    border-radius: 3px;
+    position: relative;
+    left: 12px;
+    top: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar a {
+    color: white;
+}
+
+.burger-middle{
+    top: 20px;
+}
+.burger-middle.two{
+    top: 13px;
+}   
+#burger-bottom{
+    top: 21px;
+}
+
+/* -----When menu is open------ */
+
+.open .burger-middle.one{
+    rotate: 39deg;   
+}
+.open .burger-middle.two{
+    rotate: -39deg;   
+}
+.open #burger-top, .open #burger-bottom {
+    opacity: 0;
+}
+
+.nav-items {
+    position: absolute;
+    height: 100vh;
+    min-height: 600px;                /*Attempt to fix navbar issue when holding mobile in landscape mode */
+    background-color: #303030;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    transition: all 0.5s ease-out;
+    padding-top: 140px;
+}
+
+.nav-items a, .nav-items .search-container {
+    display: block;
+    width: 60%;
+    max-width: 260px;
+    margin-left: 20%;                     /*increase in media query-------------------------*/
+    padding: 25px 0px 25px 20px;
+    margin-top: 2px;
+    font-size: 1rem;
+    border: 1px solid #B7B7B7; 
+}
+
+.nav-items a:focus, #search-field:focus, #search-go:focus {
+    background-color: #FACE3C;
+    color: black;
+}
+
+.nav-items a:hover {
+    color: black;
+    background-color: #E6E6E6;
+    transition: all 0.2s linear;
+}
+
+.nav-items #search-go:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#search-field, #search-go {
+    box-shadow: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#search-field{
+    width: 70%;
+    display: inline;
+    font-size: 1rem;
+    padding: 4px 2px 4px 2px;
+    border-radius: 0;
+    border: unset;
+    vertical-align: middle;      
+}
+
+#search-field:focus {
+    outline: unset;
+}
+
+#search-go{
+    border: unset;
+    display: inline;
+    color: white;
+    border-radius: 0;
+    background-color: rgb(141, 141, 141);
+    font-size: 1rem;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.hidden {
+    left: -800px;                           /*lose hamburger at 800px width*/
+}
+
+.nav-items .here{
+    border-color: #FACE3C;
+}
+
+/* ----------------------------main styles---------------------------------------- */
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 24px;
+}
+
+h2 {
+    font-size: 1.3125rem;
+}
+
+main {
+    min-height: 100vh;
+    background-color: #027CC1;   
+}
+
+.loading {
+    width: 60px;
+    height: 60px;
+    margin: 12px auto;
+    border-radius: 50%;
+    border: 20px solid #FACE3C;
+    border-left: 20px solid #7e671e;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    color: black;
+    padding: 12px 48px;
+    font-size: 1rem;
+    margin: 0 auto;
+    background-color: #FACE3C;
+    border: 1px solid #303030;
+    -webkit-appearance: none;
+}
+
+button:disabled {
+    background-color: lightgray;
+    opacity: 0.3;
+    cursor: auto;
+    border-width: 1px;
+}
+
+button:disabled:hover {
+    background-color: lightgray;
+    opacity: 0.3;
+    cursor: auto;
+    border-width: 1px;
+    color: black;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button:hover, button:focus{
+    cursor: pointer;
+    background-color: #303030;
+    color: white;
+}

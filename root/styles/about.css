@@ -1,0 +1,35 @@
+main {
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.3rem;   /* slight adjustment for 360px wide phones*/
+    padding: 0 5%;
+}
+
+a {
+    color: #027CC1;
+}
+
+img {
+    width: 100%;
+}
+
+.about-text {
+    margin-bottom: 72px;
+    padding: 0 5%;
+    line-height: 1.5em;
+}
+
+.fire, .better, .solutions {
+    position: relative;
+}
+
+.fire h2, .better h2, .solutions h2 {
+    position: absolute;
+    bottom: 21px;
+    left: 0px;
+    color: white;  
+}
