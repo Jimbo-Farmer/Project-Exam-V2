@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -13,7 +15,7 @@ header {
     padding: 6px 5% 12px 5%;
     text-transform: uppercase;
     border-bottom: 2px solid black;
-    background-color: #303030;
+    background-color: var(--darkgrey);
     position: sticky;
     top: 0;
     z-index: 300; 
@@ -33,13 +35,13 @@ header {
 
 .main-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.75rem; 
+    font-size: var(--medium-header); 
     margin: 0;
 }
 
 .main-title span {
     font-weight: bold;
-    color: #FACE3C;
+    color: var(--yellow);
 }
 
 .tagline {
@@ -64,7 +66,7 @@ header {
 #burger-top, .burger-middle, #burger-bottom{
     width: 45px;
     height: 7px;
-    background-color: #FACE3C;
+    background-color: var(--yellow);
     border-radius: 3px;
     position: relative;
     left: 12px;
@@ -118,12 +120,12 @@ header {
     margin-left: 20%;                     /*increase in media query-------------------------*/
     padding: 25px 0px 25px 20px;
     margin-top: 2px;
-    font-size: 1rem;
+    font-size: var(--medium-text);
     border: 1px solid #B7B7B7; 
 }
 
 .nav-items a:focus, #search-field:focus, #search-go:focus {
-    background-color: #FACE3C;
+    background-color: var(--yellow);
     color: black;
 }
 
@@ -149,7 +151,7 @@ header {
 #search-field{
     width: 70%;
     display: inline;
-    font-size: 1rem;
+    font-size: var(--medium-text);
     padding: 4px 2px 4px 2px;
     border-radius: 0;
     border: unset;
@@ -166,7 +168,7 @@ header {
     color: white;
     border-radius: 0;
     background-color: rgb(141, 141, 141);
-    font-size: 1rem;
+    font-size: var(--medium-text);
     padding: 4px;
     vertical-align: middle;
 }
@@ -176,26 +178,28 @@ header {
 }
 
 .nav-items .here{
-    border-color: #FACE3C;
+    border-color: var(--yellow);
 }
 
 /* ----------------------------main styles---------------------------------------- */
 
 h1 {
     text-transform: uppercase;
-    font-size: 1.75rem;
+    font-size: var(--medium-header);
     text-align: center;
     margin-top: 0;
     padding-top: 24px;
+    color: black;
 }
 
 h2 {
-    font-size: 1.3125rem;
+    font-size: var(--large-text);
 }
 
 main {
     min-height: 100vh;
-    background-color: #027CC1;   
+    background-color: var(--blue);    /* #7accfc */
+    padding-top: 24px;  
 }
 
 .loading {
@@ -203,7 +207,7 @@ main {
     height: 60px;
     margin: 12px auto;
     border-radius: 50%;
-    border: 20px solid #FACE3C;
+    border: 20px solid var(--yellow);
     border-left: 20px solid #7e671e;
     animation: spin 2s linear infinite;
 }
@@ -223,10 +227,10 @@ p {
 button {
     color: black;
     padding: 12px 48px;
-    font-size: 1rem;
+    font-size: var(--medium-text);
     margin: 0 auto;
-    background-color: #FACE3C;
-    border: 1px solid #303030;
+    background-color: var(--yellow);
+    border: 1px solid var(--darkgrey);
     -webkit-appearance: none;
 }
 
@@ -251,6 +255,35 @@ button:disabled:hover {
 
 button:hover, button:focus{
     cursor: pointer;
-    background-color: #303030;
+    background-color: var(--darkgrey);
     color: white;
 }
+
+
+/* ------------------footer styles------------------- */
+
+footer{
+    min-height: 300px;
+    background-color: var(--darkgrey);
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.back-to-top {
+    display: inline-block;
+    border: 20px solid transparent;
+    border-bottom-color: var(--paper-white);
+    padding-top: 24px;
+}
+
+.back-to-top:hover, .back-to-top:focus{
+    cursor: pointer;
+    border-bottom-color: var(--yellow);
+}
+
+.quote {
+    margin-top: 48px;
+    padding: 0 15%;
+    line-height: 1.8rem;
+}
+

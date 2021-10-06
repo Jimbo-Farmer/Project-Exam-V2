@@ -1,0 +1,12 @@
+:root {
+    --blue: #73d1f7;
+    --yellow: #FACE3C;
+    --paper-white: #FFFDFB;
+    --darkgrey: #303030;
+    --very-large-header: 3.125rem;
+    --large-header: 2.3125rem; 
+    --medium-header: 1.75rem; 
+    --large-text: 1.3125rem; 
+    --medium-text: 1rem; 
+    --small-text: 0.75rem;  
+  }

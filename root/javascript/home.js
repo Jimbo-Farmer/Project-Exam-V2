@@ -66,7 +66,6 @@ async function getPosts(){
                     <img src="${output[j]._embedded['wp:featuredmedia']['0'].source_url}" alt="${output[j]._embedded['wp:featuredmedia']['0'].alt_text}">
                     ${output[j].excerpt.rendered}
                     </a>` 
-                    console.log(output[j].id)
                 }
                 indexStart += tiles;
                 indexStop += tiles;

@@ -31,3 +31,20 @@ searchField.onkeydown = function(){
     runSearch();
   }
 }
+
+
+
+// Scroll to top
+
+const topButton = document.querySelector(".back-to-top");
+topButton.onclick = function(){
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+
+// Input random quote
+
+
+import {quoteList} from "../javascript/quotes.js";
+const quote = document.querySelector(".quote");
+let quoteIndex = Math.floor(Math.random()*quoteList.length);
+quote.innerHTML = `<p>${quoteList[quoteIndex]}</p>`;

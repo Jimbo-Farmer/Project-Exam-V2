@@ -1,10 +1,12 @@
+@import 'variables.css';
+
 main {
     padding: 0 5% 24px 0;
 }
 
 .full-blog {
     color: black;
-    background-color: #FFFDFB
+    background-color: var(--paper-white);
 }
 
 .blog-post {
@@ -22,7 +24,7 @@ img:hover {
 }
 
 img:focus {
-    border: 1px solid #303030;
+    border: 1px solid var(--darkgrey);
 }
 
 .wp-block-image img {
@@ -91,22 +93,22 @@ img:focus {
 }
 
 .comment-tile{
-    border: 1px solid #303030;
+    border: 1px solid var(--darkgrey);
     border-radius: 6px;
     padding: 0 12px;
     margin: 12px auto;
-    background-color: #FFFDFB;
+    background-color: var(--paper-white);
     color: black;
 }
 
 #comment-form{
-    background-color: #303030;
+    background-color: var(--darkgrey);
     padding: 8px;
 }
 
 .existing-comments {
     margin-bottom: 24px;
-    border-bottom: 2px solid #FFFDFB;
+    border-bottom: 2px solid var(--paper-white);
 }
 
 .comments h4{
