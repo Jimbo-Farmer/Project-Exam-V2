@@ -114,3 +114,8 @@ img:focus {
 .comments h4{
     margin: 12px auto;
 }
+
+#comment-submit:hover, #comment-submit:focus {
+    background-color: var(--blue);
+    color: black;
+}

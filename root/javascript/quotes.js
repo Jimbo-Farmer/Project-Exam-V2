@@ -5,6 +5,9 @@ const quoteList = [
     '"This could be heaven for everyone<br>This world could be fed,<br>This world could be fun<br>This could be heaven for everyone<br>This world could be free,<br>This world could be one"<br> - Roger Tayor',
     '"Wait a minute—isn’t it obvious that Earth belongs to everyone and to no one, and that there should be no borders?<br> Isn’t it hypocritical to make life unlivable somewhere through economic and political policies, and then to prevent people from leaving that place?"<br> - Charles Eisenstein',
     '"Fences and borders are a sign of weakness. And worst of all, they manifest themselves in our minds and we curl up with the idea of a return to a conservative national state"<br> - Yanis Varoufakis',
+    '"If wealth was the inevitable result of hard work and enterprise, every woman in Africa would be a millionaire"<br> - George Monbiot',
+    '"Beware of anyone who describes a human being as something other than a human being" <br> - George Monbiot',
+    
 ]
 
 export {quoteList};
